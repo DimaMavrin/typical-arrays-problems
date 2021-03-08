@@ -223,106 +223,106 @@ describe('.max, should find max value in given array', () => {
 describe('.avg, should calculate average value in given array', () => {
   it('Should return 0 if no params passed, or array is empty', () => {
     assert.equal(avg(), 0);
-    assert.equal(avg([]), 0);
+    assert.equal(avg(), 0);
   });
 
   it('Should return -1.8 for given array [-39,30,-32,-9,3,-2,-11,-4,-32,39,0,-14,7,20,-12,22,-23,19,0,2]', () => {
-    const avgValue = avg([-39,30,-32,-9,3,-2,-11,-4,-32,39,0,-14,7,20,-12,22,-23,19,0,2]);
+    const avgValue = avg();
 
     assert.equal(avgValue, -1.8);
   });
   it('Should return 10.4 for given array [21,38,-25,39,38,18,-12,38,-33,25,-12,-7,19,12,26,26,-28,21,-25,29]', () => {
-    const avgValue = avg([21,38,-25,39,38,18,-12,38,-33,25,-12,-7,19,12,26,26,-28,21,-25,29]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 10.4);
   });
   it('Should return 4.7 for given array [-29,-15,32,-21,-5,29,5,-1,1,24,36,24,-22,36,11,-2,-30,0,39,-18]', () => {
-    const avgValue = avg([-29,-15,32,-21,-5,29,5,-1,1,24,36,24,-22,36,11,-2,-30,0,39,-18]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 4.7);
   });
   it('Should return 8.1 for given array [-9,3,4,37,17,-2,35,-18,15,36,28,39,-7,28,18,6,-37,-18,2,-15]', () => {
-    const avgValue = avg([-9,3,4,37,17,-2,35,-18,15,36,28,39,-7,28,18,6,-37,-18,2,-15]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 8.1);
   });
   it('Should return 7.85 for given array [-26,35,-5,8,14,33,-25,23,-3,14,15,3,35,-2,-27,-3,-5,21,34,18]', () => {
-    const avgValue = avg([-26,35,-5,8,14,33,-25,23,-3,14,15,3,35,-2,-27,-3,-5,21,34,18]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 7.85);
   });
   it('Should return -0.65 for given array [12,-39,-2,-18,35,10,15,8,-32,-25,23,-37,-32,31,14,-30,37,-15,8,24]', () => {
-    const avgValue = avg([12,-39,-2,-18,35,10,15,8,-32,-25,23,-37,-32,31,14,-30,37,-15,8,24]);
+    const avgValue = avg();
 
     assert.equal(avgValue, -0.65);
   });
   it('Should return 7.45 for given array [33,38,8,19,-9,16,-19,30,22,-16,-21,36,27,-1,-7,10,-28,-31,22,20]', () => {
-    const avgValue = avg([33,38,8,19,-9,16,-19,30,22,-16,-21,36,27,-1,-7,10,-28,-31,22,20]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 7.45);
   });
   it('Should return 10.35 for given array [21,29,10,-19,21,36,38,16,16,-36,-34,19,-12,-18,-25,26,38,15,27,39]', () => {
-    const avgValue = avg([21,29,10,-19,21,36,38,16,16,-36,-34,19,-12,-18,-25,26,38,15,27,39]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 10.35);
   });
   it('Should return 13.75 for given array [5,27,25,26,-2,29,-16,39,25,34,38,10,20,-5,-7,16,-32,6,23,14]', () => {
-    const avgValue = avg([5,27,25,26,-2,29,-16,39,25,34,38,10,20,-5,-7,16,-32,6,23,14]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 13.75);
   });
   it('Should return 5.75 for given array [0,10,31,-5,-23,26,-25,-17,-2,9,13,-17,-24,31,20,16,6,19,18,29]', () => {
-    const avgValue = avg([0,10,31,-5,-23,26,-25,-17,-2,9,13,-17,-24,31,20,16,6,19,18,29]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 5.75);
   });
   it('Should return -4.2 for given array [33,-33,-6,12,-37,12,-17,30,-19,-20,-33,-29,29,-12,-18,-35,10,17,34,-2]', () => {
-    const avgValue = avg([33,-33,-6,12,-37,12,-17,30,-19,-20,-33,-29,29,-12,-18,-35,10,17,34,-2]);
+    const avgValue = avg();
 
     assert.equal(avgValue, -4.2);
   });
   it('Should return 10.8 for given array [-3,32,34,3,31,17,15,16,-32,27,-3,19,37,0,-29,8,-22,24,15,27]', () => {
-    const avgValue = avg([-3,32,34,3,31,17,15,16,-32,27,-3,19,37,0,-29,8,-22,24,15,27]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 10.8);
   });
   it('Should return 1.95 for given array [-26,27,21,2,15,-34,-17,38,-21,-24,-2,9,-23,20,37,-31,-1,17,31,1]', () => {
-    const avgValue = avg([-26,27,21,2,15,-34,-17,38,-21,-24,-2,9,-23,20,37,-31,-1,17,31,1]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 1.95);
   });
   it('Should return 5.4 for given array [37,30,22,2,7,17,20,-9,5,31,-28,-29,-14,19,23,-24,34,3,-19,-19]', () => {
-    const avgValue = avg([37,30,22,2,7,17,20,-9,5,31,-28,-29,-14,19,23,-24,34,3,-19,-19]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 5.4);
   });
   it('Should return -6.35 for given array [-26,-29,-30,-13,-33,27,-36,-5,20,-21,-15,4,-31,-7,18,28,4,35,-36,19]', () => {
-    const avgValue = avg([-26,-29,-30,-13,-33,27,-36,-5,20,-21,-15,4,-31,-7,18,28,4,35,-36,19]);
+    const avgValue = avg();
 
     assert.equal(avgValue, -6.35);
   });
   it('Should return -5 for given array [30,26,28,-38,-39,16,-34,17,1,-14,-35,14,11,-3,-13,-19,-9,-13,3,-29]', () => {
-    const avgValue = avg([30,26,28,-38,-39,16,-34,17,1,-14,-35,14,11,-3,-13,-19,-9,-13,3,-29]);
+    const avgValue = avg();
 
     assert.equal(avgValue, -5);
   });
   it('Should return 6.15 for given array [10,-9,6,11,-31,8,23,-24,16,11,35,-28,16,12,34,35,2,7,22,-33]', () => {
-    const avgValue = avg([10,-9,6,11,-31,8,23,-24,16,11,35,-28,16,12,34,35,2,7,22,-33]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 6.15);
   });
   it('Should return -6.65 for given array [37,-37,-13,-39,-24,-26,-26,-21,32,-35,-18,-39,3,15,11,-1,37,0,-26,37]', () => {
-    const avgValue = avg([37,-37,-13,-39,-24,-26,-26,-21,32,-35,-18,-39,3,15,11,-1,37,0,-26,37]);
+    const avgValue = avg();
 
     assert.equal(avgValue, -6.65);
   });
   it('Should return 1.35 for given array [0,1,13,22,4,-11,-35,-38,-8,8,16,23,27,-11,-12,-18,35,-7,16,2]', () => {
-    const avgValue = avg([0,1,13,22,4,-11,-35,-38,-8,8,16,23,27,-11,-12,-18,35,-7,16,2]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 1.35);
   });
   it('Should return 7.1 for given array [34,6,11,33,0,-10,10,3,22,-18,6,4,-21,32,23,18,-33,23,0,-1]', () => {
-    const avgValue = avg([34,6,11,33,0,-10,10,3,22,-18,6,4,-21,32,23,18,-33,23,0,-1]);
+    const avgValue = avg();
 
     assert.equal(avgValue, 7.1);
   });
